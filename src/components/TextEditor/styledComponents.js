@@ -20,6 +20,8 @@ export const SubContainer = styled.div`
 export const Heading = styled.h1`
   color: #f8fafc;
   font-family: Roboto;
+  text-decoration: normal;
+  font-weight: bold;
 `
 
 export const ImageContainer = styled.div`
@@ -44,7 +46,11 @@ export const EditorContainer = styled.div`
   display: flex;
   flex-direction: column;
 `
-export const IconsContainer = styled.div`
+export const IconsContainer = styled.ul`
+  display: flex;
+  text-decoration: none;
+`
+export const ListItem = styled.li`
   display: flex;
 `
 export const ButtonItem = styled.button`
@@ -64,10 +70,13 @@ export const HrLine = styled.hr`
   margin: 0px;
 `
 
-export const InputField = styled.input`
+export const InputField = styled.textarea`
   height: 100%;
   width: 90%;
   background-color: transparent;
   border: 0px none;
   color: white;
+  font-style: ${props => props.isItalic}
+  font-weight: ${props => props.isBold}
+  text-decoration: ${props => props.isUnderline}
 `
