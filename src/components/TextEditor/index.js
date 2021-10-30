@@ -37,7 +37,7 @@ class Text extends Component {
   }
 
   render() {
-    const {inputText, isBold, isUnderline, isItalic} = this.state
+    const {isBold, isUnderline, isItalic} = this.state
     const boldColor = isBold ? '#faff00' : '#f1f5f9'
     const underlineColor = isUnderline ? '#faff00' : '#f1f5f9'
     const italicColor = isItalic ? '#faff00' : '#f1f5f9'
@@ -64,7 +64,7 @@ class Text extends Component {
                   onClick={this.onClickBold}
                   data-testid="bold"
                 >
-                  <VscBold />
+                  <VscBold size={25} />
                 </ButtonItem>
               </ListItem>
               <ListItem>
@@ -90,7 +90,6 @@ class Text extends Component {
             <InputField
               rows="5"
               cols="50"
-              value={inputText}
               onChange={this.onInputText}
               isBold={weightItem}
               isUnderline={underlineItem}

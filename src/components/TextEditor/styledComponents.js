@@ -71,12 +71,10 @@ export const HrLine = styled.hr`
 `
 
 export const InputField = styled.textarea`
-  height: 100%;
-  width: 90%;
   background-color: transparent;
   border: 0px none;
   color: white;
-  font-style: ${props => props.isItalic}
-  font-weight: ${props => props.isBold}
-  text-decoration: ${props => props.isUnderline}
+  font-style: ${props => props.isItalic};
+  font-weight: ${props => props.isBold};
+  text-decoration: ${props => props.isUnderline};
 `
